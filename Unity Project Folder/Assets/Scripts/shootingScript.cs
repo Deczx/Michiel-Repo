@@ -19,11 +19,6 @@ public class shootingScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-        projectileSpeed = 5f;
-
-
-
     }
 
     // Update is called once per frame
@@ -50,7 +45,7 @@ public class shootingScript : MonoBehaviour
 
             GameObject bulletTemp = Instantiate(bullet, startPosition, Quaternion.identity) as GameObject;
             rb = bulletTemp.GetComponent<Rigidbody2D>();
-            rb.velocity = direction * 10f;
+            rb.velocity = direction * projectileSpeed;
             yield return new WaitForSeconds(0.4f);
             isFired = false;
         }
