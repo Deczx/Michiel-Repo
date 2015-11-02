@@ -4151,6 +4151,14 @@ Prefab:
       propertyPath: rb
       value: 
       objectReference: {fileID: 5079038, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
+    - target: {fileID: 11464058, guid: 37a496e485b251841919026e77b46d80, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464058, guid: 37a496e485b251841919026e77b46d80, type: 2}
+      propertyPath: projectileSpeed
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37a496e485b251841919026e77b46d80, type: 2}
   m_IsPrefabParent: 0
