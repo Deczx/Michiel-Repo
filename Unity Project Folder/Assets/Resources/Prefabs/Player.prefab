@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11400852}
   - 61: {fileID: 6104356}
   - 50: {fileID: 5035852}
+  - 114: {fileID: 11464058}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -75,6 +76,24 @@ MonoBehaviour:
   horizontalMaxSpeed: 10
   verticalMovementSpeed: 0
   verticalMaxSpeed: 0
+--- !u!114 &11464058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eae556c1eea49c49830271e230a7fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
+  direction: {x: 0, y: 0}
+  player: {fileID: 0}
+  rb: {fileID: 0}
+  projectileSpeed: 0
+  startPosition: {x: 0, y: 0}
+  isFired: 0
 --- !u!212 &21282528
 SpriteRenderer:
   m_ObjectHideFlags: 1
