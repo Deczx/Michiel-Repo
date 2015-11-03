@@ -72,10 +72,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30826ebf1b8224546bdf56636483016c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalMovementSpeed: 4
-  horizontalMaxSpeed: 10
-  verticalMovementSpeed: 0
-  verticalMaxSpeed: 0
+  horizontalMovementSpeed: 20
+  verticalMovementSpeed: 20
 --- !u!114 &11464058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +128,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: verticalMovementSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: horizontalMovementSpeed
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
