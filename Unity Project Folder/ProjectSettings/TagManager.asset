@@ -9,6 +9,10 @@ TagManager:
   - wallV
   - Enemy
   - Bullet
+  - Clone
+  - GreenEnemy
+  - RedEnemy
+  - BlueEnemy
   layers:
   - Default
   - TransparentFX
