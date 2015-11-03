@@ -26,9 +26,12 @@ public class playerMovement : MonoBehaviour
     }
 
     // handle collisions
-    void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D coll)
     {
-
+        if (coll.gameObject.tag == "Enemy")
+        {
+            Application.LoadLevel(2); //go to game over scene
+        }
     }
 
 
