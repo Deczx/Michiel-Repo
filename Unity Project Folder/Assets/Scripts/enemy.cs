@@ -27,6 +27,7 @@ public class enemy : MonoBehaviour {
 
         if (health <= 0)
         {
+            BroadcastMessage("Killed");
             Object.Destroy(this.gameObject);
         }
     }
@@ -43,6 +44,5 @@ public class enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 }

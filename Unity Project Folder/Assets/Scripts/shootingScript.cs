@@ -101,4 +101,12 @@ public class shootingScript : MonoBehaviour
             isFired = false;
         }
     }
+
+    void OnCollideEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Enemy")
+        {
+            coll.gameObject.SendMessage("TakeDamage");
+        }
+    }
 }

@@ -35,8 +35,12 @@ public class EnemyManager : MonoBehaviour {
         if (is_started == false)
         {
             is_started = true;
-            int num_spawns = GameObject.FindGameObjectsWithTag("Spawn").Length;
-            BroadcastMessage("Spawn", currency / num_spawns); //int division
+            GameObject[] spawns = GameObject.FindGameObjectsWithTag("Spawn");
+            Debug.Log(spawns.Length);
+            foreach (GameObject spawn in spawns)
+            {
+                spawn.BroadcastMessage("Spawn", currency / spawns.Length); //int division
+            }
         }
     }
 
