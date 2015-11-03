@@ -19,7 +19,7 @@ public class shootingScript : MonoBehaviour
 
     public bool isFired;
 
-    enum BulletType
+    public enum BulletType
     {
         BULLET_TYPE_NORMAL = 0,
         BULLET_TYPE_BLUE,
@@ -27,7 +27,7 @@ public class shootingScript : MonoBehaviour
         BULLET_TYPE_RED
     };
 
-    BulletType b_type = BulletType.BULLET_TYPE_NORMAL;
+    public static BulletType b_type = BulletType.BULLET_TYPE_NORMAL;
 
     // Use this for initialization
     void Start()
@@ -65,6 +65,8 @@ public class shootingScript : MonoBehaviour
         {
             b_type = BulletType.BULLET_TYPE_NORMAL;
         }
+
+        
     }
 
     IEnumerator Fire()
