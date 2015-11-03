@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BulletManager : MonoBehaviour {
 
+    AudioSource ac;
     public static int ammo;
     public static int ammoBlue;
     public static int ammoGreen;
@@ -14,6 +15,8 @@ public class BulletManager : MonoBehaviour {
         ammoBlue = 0;
         ammoGreen = 0;
         ammoRed = 0;
+
+        ac = this.GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +30,7 @@ public class BulletManager : MonoBehaviour {
         {
             ammo -= 3;
             ammoBlue++;
+            ac.Play();
         }
     }
 
@@ -36,6 +40,7 @@ public class BulletManager : MonoBehaviour {
         {
             ammo += 2;
             ammoBlue--;
+            ac.Play();
         }
     }
 
@@ -45,6 +50,7 @@ public class BulletManager : MonoBehaviour {
         {
             ammo -= 3;
             ammoGreen++;
+            ac.Play();
         }
     }
 
@@ -54,7 +60,8 @@ public class BulletManager : MonoBehaviour {
        {
             ammo += 2;
             ammoGreen--;
-       }
+            ac.Play();
+        }
        
     }
 
@@ -64,6 +71,7 @@ public class BulletManager : MonoBehaviour {
         {
             ammo -= 3;
             ammoRed++;
+            ac.Play();
         }
     }
 
@@ -73,6 +81,7 @@ public class BulletManager : MonoBehaviour {
         {
             ammo += 2;
             ammoRed--;
+            ac.Play();
         }
 
     }
