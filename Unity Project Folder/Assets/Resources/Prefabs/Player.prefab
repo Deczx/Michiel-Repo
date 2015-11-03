@@ -85,7 +85,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eae556c1eea49c49830271e230a7fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
+  normal_bullet: {fileID: 162312, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
+  blue_bullet: {fileID: 162312, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
+  green_bullet: {fileID: 162312, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
+  red_bullet: {fileID: 162312, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
   direction: {x: 0, y: 0}
   player: {fileID: 0}
   rb: {fileID: 0}
@@ -137,6 +140,22 @@ Prefab:
       propertyPath: horizontalMovementSpeed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: normal_bullet
+      value: 
+      objectReference: {fileID: 162312, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: blue_bullet
+      value: 
+      objectReference: {fileID: 162312, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: green_bullet
+      value: 
+      objectReference: {fileID: 162312, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: red_bullet
+      value: 
+      objectReference: {fileID: 162312, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 121032}
