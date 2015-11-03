@@ -12,6 +12,7 @@ GameObject:
   - 58: {fileID: 5856838}
   - 114: {fileID: 11466084}
   - 50: {fileID: 5005376}
+  - 114: {fileID: 11491320}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -42,10 +43,10 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &5856838
 CircleCollider2D:
@@ -74,6 +75,18 @@ MonoBehaviour:
   shot: {fileID: 186948, guid: 5a0086d50c1a36142bff0869f4391d4c, type: 2}
   hsp: 4.5
   timer: 100
+--- !u!114 &11491320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2dbcd1cdcefc044a217552dfd46595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
 --- !u!212 &21280984
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -106,7 +119,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172906}

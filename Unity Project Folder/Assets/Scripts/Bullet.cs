@@ -2,10 +2,6 @@
 using System.Collections;
 
 public class Bullet : MonoBehaviour {
-    public GameObject player;
-    public float startPosition;
-    public float targetPosition;
-    public float speed;
 	// Use this for initialization
 	void Start () {
         
@@ -15,4 +11,15 @@ public class Bullet : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnCollisionEnter2D(Collision2D coll) 
+    {
+        Debug.Log(coll.gameObject);
+        if (coll.gameObject.tag == "Enemy")
+        {
+            coll.gameObject.SendMessage("TakeDamage", 20.0f);
+        }
+
+        Object.Destroy(this.gameObject);
+    }
 }
