@@ -4174,15 +4174,15 @@ Prefab:
     - target: {fileID: 11464058, guid: 37a496e485b251841919026e77b46d80, type: 2}
       propertyPath: blue_bullet
       value: 
-      objectReference: {fileID: 172686, guid: 226723774efc2c74a857466dd3bed517, type: 2}
+      objectReference: {fileID: 191698, guid: 605b690bf6e31b34ca2e26781dd10f3e, type: 2}
     - target: {fileID: 11464058, guid: 37a496e485b251841919026e77b46d80, type: 2}
       propertyPath: red_bullet
       value: 
-      objectReference: {fileID: 131642, guid: f4fd44b4b56ccd143a49be7adeba1b85, type: 2}
+      objectReference: {fileID: 135626, guid: eea407fdf97674148a6295b232e6fafa, type: 2}
     - target: {fileID: 11464058, guid: 37a496e485b251841919026e77b46d80, type: 2}
       propertyPath: green_bullet
       value: 
-      objectReference: {fileID: 165568, guid: b8de181cbf7bb5a499c0575fc42f8d7e, type: 2}
+      objectReference: {fileID: 156272, guid: 28a503e548d9b1f41b2a524329fd8fe3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37a496e485b251841919026e77b46d80, type: 2}
   m_IsPrefabParent: 0
@@ -4984,6 +4984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  damage_mod: 25
 --- !u!1001 &995965382
 Prefab:
   m_ObjectHideFlags: 0
@@ -8967,6 +8968,22 @@ Prefab:
       propertyPath: m_Name
       value: Bullet
       objectReference: {fileID: 0}
+    - target: {fileID: 11475346, guid: eea407fdf97674148a6295b232e6fafa, type: 2}
+      propertyPath: normal_bullet
+      value: 
+      objectReference: {fileID: 162312, guid: 2352c7eaa92bae847a19d94764cbd47f, type: 2}
+    - target: {fileID: 11475346, guid: eea407fdf97674148a6295b232e6fafa, type: 2}
+      propertyPath: blue_bullet
+      value: 
+      objectReference: {fileID: 191698, guid: 605b690bf6e31b34ca2e26781dd10f3e, type: 2}
+    - target: {fileID: 11475346, guid: eea407fdf97674148a6295b232e6fafa, type: 2}
+      propertyPath: green_bullet
+      value: 
+      objectReference: {fileID: 156272, guid: 28a503e548d9b1f41b2a524329fd8fe3, type: 2}
+    - target: {fileID: 11475346, guid: eea407fdf97674148a6295b232e6fafa, type: 2}
+      propertyPath: red_bullet
+      value: 
+      objectReference: {fileID: 135626, guid: eea407fdf97674148a6295b232e6fafa, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eea407fdf97674148a6295b232e6fafa, type: 2}
   m_IsPrefabParent: 0
