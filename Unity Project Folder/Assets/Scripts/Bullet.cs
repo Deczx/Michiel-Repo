@@ -2,10 +2,8 @@
 using System.Collections;
 
 public class Bullet : MonoBehaviour {
-    public GameObject player;
-    public float startPosition;
-    public float targetPosition;
-    public float speed;
+    int b_type = 0;
+
 	// Use this for initialization
 	void Start () {
         
@@ -15,4 +13,19 @@ public class Bullet : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void SetType(int bt)
+    {
+        b_type = bt;
+    }
+
+    void OnCollisionEnter2D(Collision2D coll) 
+    {
+        if (coll.gameObject.tag == "Enemy")
+        {
+            coll.gameObject.SendMessage("TakeDamage", b_type);
+        }
+
+        Object.Destroy(this.gameObject);
+    }
 }

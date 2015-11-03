@@ -7,6 +7,9 @@ TagManager:
   - target
   - enemy1
   - wallV
+  - Enemy
+  - Bullet
+  - Spawn
   layers:
   - Default
   - TransparentFX
