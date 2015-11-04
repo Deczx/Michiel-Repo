@@ -10,12 +10,11 @@ GameObject:
   - 4: {fileID: 424782}
   - 212: {fileID: 21223198}
   - 58: {fileID: 5849336}
-  - 114: {fileID: 11406436}
   - 50: {fileID: 5075330}
   - 114: {fileID: 11434334}
   m_Layer: 0
   m_Name: GreenEnemy
-  m_TagString: GreenEnemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,20 +60,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .654999971
---- !u!114 &11406436
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1149b47a7160e4cb36dca669bf6687, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shot: {fileID: 186948, guid: 5a0086d50c1a36142bff0869f4391d4c, type: 2}
-  hsp: 4.5
-  timer: 100
 --- !u!114 &11434334
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -87,6 +72,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
+  damage_mod: 25
 --- !u!212 &21223198
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -122,7 +108,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_TagString
-      value: GreenEnemy
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

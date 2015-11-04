@@ -36,7 +36,6 @@ public class EnemyManager : MonoBehaviour {
         {
             is_started = true;
             GameObject[] spawns = GameObject.FindGameObjectsWithTag("Spawn");
-            Debug.Log(spawns.Length);
             foreach (GameObject spawn in spawns)
             {
                 spawn.BroadcastMessage("Spawn", currency / spawns.Length); //int division

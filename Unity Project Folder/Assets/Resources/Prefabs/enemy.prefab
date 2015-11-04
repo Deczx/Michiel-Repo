@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 498554}
   - 212: {fileID: 21280984}
   - 58: {fileID: 5856838}
-  - 114: {fileID: 11466084}
   - 50: {fileID: 5005376}
   - 114: {fileID: 11491320}
   m_Layer: 0
@@ -61,20 +60,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .654999971
---- !u!114 &11466084
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172906}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1149b47a7160e4cb36dca669bf6687, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shot: {fileID: 186948, guid: 5a0086d50c1a36142bff0869f4391d4c, type: 2}
-  hsp: 4.5
-  timer: 100
 --- !u!114 &11491320
 MonoBehaviour:
   m_ObjectHideFlags: 1
