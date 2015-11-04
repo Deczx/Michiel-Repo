@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Enemy")
         {
-            coll.gameObject.SendMessage("TakeDamage", 20.0f);
+            coll.gameObject.SendMessage("TakeDamage", b_type);
         }
 
         Object.Destroy(this.gameObject);

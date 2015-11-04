@@ -19,7 +19,7 @@ public class shootingScript : MonoBehaviour
 
     public bool isFired;
 
-    enum BulletType
+    public enum BulletType
     {
         BULLET_TYPE_NORMAL = 0,
         BULLET_TYPE_BLUE,
@@ -27,7 +27,7 @@ public class shootingScript : MonoBehaviour
         BULLET_TYPE_RED
     };
 
-    BulletType b_type = BulletType.BULLET_TYPE_NORMAL;
+    public static BulletType b_type = BulletType.BULLET_TYPE_NORMAL;
 
     // Use this for initialization
     void Start()
@@ -65,6 +65,8 @@ public class shootingScript : MonoBehaviour
         {
             b_type = BulletType.BULLET_TYPE_NORMAL;
         }
+
+        
     }
 
     IEnumerator Fire()
@@ -99,6 +101,14 @@ public class shootingScript : MonoBehaviour
             bulletTemp.SendMessage("SetType", (int) b_type);
             yield return new WaitForSeconds(0.4f);
             isFired = false;
+        }
+    }
+
+    void OnCollideEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Enemy")
+        {
+            coll.gameObject.SendMessage("TakeDamage");
         }
     }
 }
